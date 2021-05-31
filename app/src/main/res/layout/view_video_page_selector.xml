@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_single_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单个视频"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_video_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多视频切换"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_video_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多视频同时"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</FrameLayout>

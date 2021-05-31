@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashBoardFragment">
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.github.moqigit.app.dashboard.DashBoardFragment"
+        android:label="DashBoardFragment" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_singleVideoFragment"
+            app:destination="@id/singleVideoFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_videoListFragment"
+            app:destination="@id/videoListFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_videoPagerFragment"
+            app:destination="@id/videoPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleVideoFragment"
+        android:name="com.github.moqigit.app.video.SingleVideoFragment"
+        android:label="SingleVideoFragment" />
+    <fragment
+        android:id="@+id/videoListFragment"
+        android:name="com.github.moqigit.app.video.VideoListFragment"
+        android:label="VideoListFragment" />
+    <fragment
+        android:id="@+id/videoPagerFragment"
+        android:name="com.github.moqigit.app.video.VideoPagerFragment"
+        android:label="VideoPagerFragment" />
+</navigation>
